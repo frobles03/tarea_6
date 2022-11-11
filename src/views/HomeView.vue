@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
+  <div class="Trabajos">
     <h1>bienvenido a la tarea 6</h1>
     <div class="post" v-for="job in jobs" v-bind:key="job._id">
-      <h3> {{ job._id }}</h3>
-      <h3> {{ job.title }}</h3>
+      <strong> {{ job.title }}</strong> , salario:{{ job.salary }}
+     
     </div>
     
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+// @ is an alias to /src    lista de los trabajos y que si se apreta uno de esos traabajos ver que aplicantes 
 // import HelloWorld from '@/components/HelloWorld.vue'
 import axios from 'axios'
 export default {
@@ -23,7 +23,7 @@ export default {
 
   mounted() {
     let vue = this;
-    axios.get('https://jobs-demo-api-js.herokuapp.com/jobs')
+    axios.get('//170.239.85.65:3000/jobs')
       .then(function (response) {
         vue.jobs = response.data;
         console.log(vue.jobs)
