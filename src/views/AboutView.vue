@@ -6,6 +6,7 @@
     <div class="post" v-for="job in jobs3" v-bind:key="job.jobId">     
       <strong>posicion:</strong> {{ job.jobId.position}} <strong> descripcion:</strong> {{ job.jobId.description}}
       <strong>mensaje del aplicante :</strong> {{ job.message}}
+      
     </div>
    
   </div>

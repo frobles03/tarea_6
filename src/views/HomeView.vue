@@ -2,7 +2,7 @@
   <div class="Trabajos">
     <h1>bienvenido a la tarea 6</h1>
     <div class="post" v-for="job in jobs" v-bind:key="job._id">
-      <strong> {{ job.title }}</strong> , salario:{{ job.salary }}
+      <strong> <a href="http://localhost:8080/Trabajo">{{ job.title }}</a></strong> , salario:{{ job.salary }}
      
     </div>
     

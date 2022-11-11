@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Trabajos</router-link> |
+    <router-link to="/jobs">Trabajos</router-link> |
     <router-link to="/about">Aplicantes</router-link> |
     <router-link to="/Trabajo">trabajo</router-link>
   </nav>
