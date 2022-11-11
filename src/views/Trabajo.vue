@@ -1,5 +1,5 @@
 <template>
-    <div class="Aplicantes">
+    <div class="Trabajo">
       <h1>bienvenido a la tarea 6</h1>
   
       <h1>trabajo 3</h1>
@@ -9,7 +9,7 @@
       </div>
      
   
-     
+    </div>
   </template>
   
   <script>

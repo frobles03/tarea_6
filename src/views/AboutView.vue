@@ -8,7 +8,7 @@
       <strong>mensaje del aplicante :</strong> {{ job.message}}
     </div>
    
-
+  </div>
    
 </template>
 
