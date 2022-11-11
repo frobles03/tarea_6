@@ -2,7 +2,7 @@
   <nav>
     <router-link to="/jobs">Trabajos</router-link> |
     <router-link to="/about">Aplicantes</router-link> |
-    <router-link to="/Trabajo">trabajo</router-link>
+    
   </nav>
   <router-view/>
 </template>

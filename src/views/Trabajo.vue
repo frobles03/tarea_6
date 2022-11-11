@@ -3,7 +3,7 @@
       <h1>bienvenido a la tarea 6</h1>
   
       <h1>trabajo 1</h1>
-      <div class="post" v-for="job in jobs3" v-bind:key="job.jobId">     
+      <div class="post" v-if="job">     
         <strong>posicion:</strong> {{ job.jobId.position}} <strong> descripcion:</strong> {{ job.jobId.description}}
         <strong>mensaje del aplicante :</strong> {{ job.message}}
       </div>
@@ -20,7 +20,7 @@
     name: 'HomeView',
     data() {
       return {
-        jobs3: []
+        job: null
         
         
       }
@@ -29,10 +29,10 @@
   
     mounted() {
       let vue = this;
-      axios.get('//170.239.85.65:3000/jobs/635d786a2be73d03233ad3cb/applications')
+      axios.get('//170.239.85.65:3000/jobs/'+this.$route.params.id)
         .then(function (response) {
-          vue.jobs3 = response.data;
-          console.log(vue.jobs3)
+          vue.job= response.data;
+          console.log(vue.job)
         })
          
         

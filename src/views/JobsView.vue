@@ -2,7 +2,7 @@
     <div class="Trabajos">
       <h1>bienvenido a la tarea 6</h1>
       <div class="post" v-for="job in jobs" v-bind:key="job._id">
-        <strong> <router-link to="/jobs">{{job.title}}</router-link>  </strong> , salario:{{ job.salary }}
+        <strong> <router-link :to="{name:'job', params:{id:job._id}}">{{job.title}}</router-link>  </strong> , salario:{{ job.salary }}
        
       </div>
       
