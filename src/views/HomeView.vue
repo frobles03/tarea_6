@@ -3,7 +3,9 @@
     <h1>bienvenido a la tarea 6</h1>
     <div class="post" v-for="job in jobs" v-bind:key="job._id">
       <strong> {{ job.title }}</strong> , salario:{{ job.salary }}
-     
+      <nav>
+     <li><router-link to="//170.239.85.65:3000/jobs/635d786a2be73d03233ad3cd">Aplicantes</li>
+     </nav>
     </div>
     
   </div>

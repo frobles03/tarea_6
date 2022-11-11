@@ -2,10 +2,24 @@
   <nav>
     <router-link to="/">Trabajos</router-link> |
     <router-link to="/about">Aplicantes</router-link>
+    <router-link to="/">trabajo2</router-link>
   </nav>
   <router-view/>
 </template>
+<!-- <script>
+import AboutView from './views/AboutView.vue';
 
+export default{
+  components:{
+    'AboutView':AboutView
+  },
+
+
+
+  
+}
+
+</script> -->
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
